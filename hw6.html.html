@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="number">
+    <input type="text" id="number">
+    <button onclick= "tongab" >
+        tính tổng
+    </button>
+</body>
+
+
+
+
+function taiDuLieu() {
+    fetch('https://api.example.com/data')
+        .then(response => response.json())
+        .then(data => console.log(data));
+}
+<script>
+    function tongab() {
+        var txta = document.getElementById('txta').value;
+        var txtb = document.getElementById('txtb').value;
+
+        if (txta == null || txta == '' || isNaN(txta)) {
+            alert('Vui lòng nhập số a');
+            return;
+        }
+        if (txtb == null || ttb == '' || isNaN(txtb)) {
+            alert('Vui long nhap so b');
+            return;
+        }
+        if(txta.value == "" || isNaN(txta.value)) {
+            txt.document.write("<font color='red'>You must enter a number</font>");
+        }
+        if(txtb.value == "" || isNaN(txtb.value)) {
+            txt.document.write("<font color='red'>You must enter a number</font>");
+        }
+
+        alert ("Result:\n" +
+            txta + " + " + txtb +" = " + result);
+    }
+</script>
+</html>
